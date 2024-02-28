@@ -1,22 +1,21 @@
-Earthquake Visualization
+# Earthquake Visualization
 
-This project involves visualizing earthquake data using Leaflet, a JavaScript library for interactive maps. I obtained the dataset from the United States Geological Survey (USGS) GeoJSON Feed, which provides real-time earthquake information updated every few minutes.
+## Overview
 
+This assignment involves visualizing earthquake data using the USGS GeoJSON Feed. The goal is to create an interactive map that plots earthquakes based on their magnitude, depth, and location.
 
+## Create the Earthquake Visualization
 
-Get your dataset. To do so, follow these steps:
+### Steps
+#### Get your dataset:
+* Visit the USGS GeoJSON Feed page.
+* Choose a dataset (e.g., "All Earthquakes from the Past 7 Days") and click on it to get the JSON representation of the data.
 
-The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the USGS GeoJSON FeedLinks to an external site. page and choose a dataset to visualize. The following image is an example screenshot of what appears when you visit this link:
-3-Data
+#### Import and visualize the data:
+* Use Leaflet to create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
+* Size the data markers to reflect the magnitude of the earthquake and color them based on the depth of the earthquake.
+* Include popups that provide additional information about each earthquake when its associated marker is clicked.
 
-When you click a dataset (such as "All Earthquakes from the Past 7 Days"), you will be given a JSON representation of that data. Use the URL of this JSON to pull in the data for the visualization. The following image is a sampling of earthquake data in JSON format:
-4-JSON
-
-Import and visualize the data by doing the following:
-
-Using Leaflet, create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
-
-Your data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes with higher magnitudes should appear larger, and earthquakes with greater depth should appear darker in color.
-
-Include popups that provide additional information about the earthquake when its associated marker is clicked.
-
+#### Create a legend:
+* Create a legend that explains the magnitude and depth ranges represented by the marker sizes and colors.
+Create a legend that explains the magnitude and depth ranges represented by the marker sizes and colors.
